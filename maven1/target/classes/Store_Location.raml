@@ -1,0 +1,17 @@
+#%RAML 0.8
+#baseUri: https://mocksvc.mulesoft.com/mocks/fb109cf3-c871-4f13-ba33-2a4a0ac439ca
+#baseUri: http://maven-sample-project1.cloudhub.io/api
+baseUri: https://mocksvc.mulesoft.com/mocks/f2f4e700-4e44-4e7f-8a37-4bb56c37e090
+title: Store_Location
+version: 1
+
+
+/Store_Location: 
+ /{zip_code}:
+   get:
+     responses: 
+       200:
+         body: 
+           application/json:
+             example: |
+              [{"store_id":2, "Address": "McDonalds , Wacker Drive ,Chicago", "zipCode": 60659 }]
